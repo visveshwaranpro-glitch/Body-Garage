@@ -12,16 +12,11 @@ export default function Footer() {
       {/* Top accent bar */}
       <div className="h-1 w-full bg-gradient-to-r from-transparent via-red to-transparent" />
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-16">
-        <div className="grid md:grid-cols-12 gap-10">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-10">
+        <div className="grid md:grid-cols-12 gap-6">
           {/* Brand */}
           <div className="md:col-span-5">
-            <div className="flex items-center gap-2.5 mb-5">
-              <span className="flex h-10 w-10 items-center justify-center bg-red rounded-sm">
-                <span className="font-display text-white text-lg leading-none">BG</span>
-              </span>
-            </div>
-            <SectionBrand className="!mt-2 justify-start" />
+            <SectionBrand className="mb-3 justify-start" />
             <p className="text-bone-400 text-sm leading-relaxed max-w-sm">{GYM.tagline}</p>
 
             {/* Contact */}
@@ -73,9 +68,12 @@ export default function Footer() {
 
           {/* Quick links */}
           <div className="md:col-span-4">
-            <h4 className="font-display text-bone-50 text-xl tracking-tightest uppercase mb-5">
-              Quick <span className="text-red">Links</span>
-            </h4>
+            <div className="flex items-center gap-3 mb-5">
+              <img src="/images/logo copy.jpeg" alt="Body Garage logo" className="h-12 w-12 rounded-full object-cover" />
+              <h4 className="font-display text-bone-50 text-xl tracking-tightest uppercase">
+                Quick <span className="text-red">Links</span>
+              </h4>
+            </div>
             <ul className="grid grid-cols-2 gap-x-6 gap-y-3">
               {NAV.map((item) => (
                 <li key={item.id}>
@@ -110,7 +108,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-14 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-8 pt-5 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-bone-500 text-xs uppercase tracking-wider">
             © 2026 Body Garage Fitness Club. All rights reserved.
           </p>
