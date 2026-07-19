@@ -7,7 +7,7 @@ export const GYM = {
   address: '3rd Floor, Dharapuram - Tiruppur Rd, opp. to Government Hospital, GKMR Nagar, Tiruppur, Tamil Nadu 641604, India',
   facebook: 'https://www.facebook.com/profile.php?id=61569622733101',
   instagram: 'https://www.instagram.com/bodygaragefitnessclub/',
-  maps: 'https://www.google.com/maps/search/?api=1&query=Body+Garage+Fitness+Club+GKMR+Nagar+Tiruppur',
+  maps: 'https://maps.app.goo.gl/3uUg1yZADa6CLrse7?g_st=aw',
   mapsReviews: 'https://www.google.com/maps/search/?api=1&query=Body+Garage+Fitness+Club+Tiruppur+reviews',
   mapsEmbed:
     'https://maps.google.com/maps?q=Body%20Garage%20Fitness%20Club%2C%20Dharapuram%20Tiruppur%20Rd%2C%20GKMR%20Nagar%2C%20Tiruppur%2C%20Tamil%20Nadu%20641604&t=&z=16&ie=UTF8&iwloc=&output=embed',
