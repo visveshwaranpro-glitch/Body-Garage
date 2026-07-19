@@ -76,6 +76,14 @@ export default function Footer() {
 
           {/* Quick links */}
           <div className="md:col-span-4">
+            <div className="flex items-center gap-2.5 mb-5">
+              <span className="flex h-10 w-10 items-center justify-center bg-red rounded-sm">
+                <span className="font-display text-white text-lg leading-none">BG</span>
+              </span>
+              <span className="font-display text-bone-50 text-xl tracking-tightest uppercase">
+                Body <span className="text-red">Garage</span> Fitness Club
+              </span>
+            </div>
             <h4 className="font-condensed text-bone-50 text-sm uppercase tracking-widest mb-5">
               Quick Links
             </h4>
