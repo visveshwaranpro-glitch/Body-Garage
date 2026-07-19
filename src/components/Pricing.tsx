@@ -5,15 +5,15 @@ import SectionBrand from './SectionBrand';
 export default function Pricing() {
   return (
     <section id="pricing" className="relative py-24 sm:py-32 bg-ink-950 overflow-hidden grain">
-      {/* Big ghost text */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <span className="font-display text-stroke text-[18vw] uppercase leading-none opacity-20 select-none">
-          PRICING
-        </span>
-      </div>
-
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="text-center">
+        {/* Background pricing text above the plans */}
+        <div className="relative pointer-events-none select-none mb-2 flex justify-center">
+          <span className="font-display text-stroke text-[22vw] sm:text-[18vw] uppercase leading-[0.8] opacity-20">
+            PRICING
+          </span>
+        </div>
+
+        <div className="text-center -mt-6 sm:-mt-10 relative">
           <div className="reveal flex items-center justify-center gap-3 mb-6">
             <span className="h-px w-10 bg-red" />
             <span className="font-condensed text-red text-sm tracking-widest uppercase">

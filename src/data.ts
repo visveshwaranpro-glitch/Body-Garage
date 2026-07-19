@@ -44,10 +44,34 @@ export const SPECIALIZATIONS = [
 ];
 
 export const TRAINERS = [
-  { name: 'Karthick', role: 'Owner & Head Trainer', phone: '+91 9600556550' },
-  { name: 'Arun', role: 'Trainer', phone: '+91 8056965955' },
-  { name: 'Bala Ganesh', role: 'Trainer', phone: '+91 9789240109' },
-  { name: 'Adhitya', role: 'Trainer', phone: '+91 9842224777' },
+  {
+    name: 'Karthick',
+    role: 'Owner & Head Trainer',
+    phone: '+91 9600556550',
+    title: 'Gold Champion · Bench Press',
+    creds: 'Bodybuilding & Powerlifting Gold Champion. Specializes in bench press, deadlift and competition-stage conditioning.',
+  },
+  {
+    name: 'Arun',
+    role: 'Trainer',
+    phone: '+91 8056965955',
+    title: 'Gold Champion · Deadlift',
+    creds: 'Weightlifting Gold Champion in deadlift. Coaches clients for serious strength and competition-ready physiques.',
+  },
+  {
+    name: 'Bala Ganesh',
+    role: 'Trainer',
+    phone: '+91 9789240109',
+    title: 'Bodybuilding Champion',
+    creds: 'Bodybuilding champion coaching clients in muscle gain, posing and stage presence for competition prep.',
+  },
+  {
+    name: 'Adhitya',
+    role: 'Trainer',
+    phone: '+91 9842224777',
+    title: 'Weightlifting Champion',
+    creds: 'Weightlifting champion in bench press & deadlift. Trains clients for strength, mass and transformation.',
+  },
 ];
 
 export const STATS = [

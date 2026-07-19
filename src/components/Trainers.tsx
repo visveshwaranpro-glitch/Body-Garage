@@ -1,4 +1,4 @@
-import { Phone } from 'lucide-react';
+import { Phone, Trophy } from 'lucide-react';
 import { TRAINERS } from '../data';
 import SectionBrand from './SectionBrand';
 
@@ -13,11 +13,12 @@ export default function Trainers() {
             <span className="font-condensed text-red text-sm tracking-widest uppercase">The Crew</span>
           </div>
           <h2 className="reveal delay-1 font-display text-bone-50 text-4xl sm:text-5xl lg:text-6xl uppercase leading-[0.95] tracking-tightest">
-            Meet Our <span className="text-red">Expert Trainers</span>
+            Meet Our <span className="text-red">Champion Trainers</span>
           </h2>
           <SectionBrand className="reveal delay-2" />
           <p className="reveal delay-2 mt-5 text-bone-400 text-lg">
-            Tap any trainer to call them directly. Real coaches, real results.
+            Gold champions in bodybuilding, bench press & deadlift — coaching clients to their own
+            competition-ready best. Tap any trainer to call them directly.
           </p>
         </div>
 
@@ -32,14 +33,12 @@ export default function Trainers() {
             >
               {/* Image container */}
               <div className="relative aspect-[8/9] sm:aspect-[6/7] overflow-hidden bg-gradient-to-br from-ink-800 to-ink-950">
-                {/* Load trainer image if available */}
                 <img
                   src={`/images/trainer-${i + 1}.jpg`}
                   alt={t.name}
                   className="w-full h-full object-cover"
                   style={{ display: 'block' }}
                   onError={(e) => {
-                    // Image not found - show placeholder
                     e.currentTarget.style.display = 'none';
                   }}
                 />
@@ -50,16 +49,20 @@ export default function Trainers() {
                       'radial-gradient(circle at 50% 30%, rgba(225,6,0,0.4), transparent 70%)',
                   }}
                 />
-                {/* Silhouette / initials */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <span className="font-display text-7xl text-white/10 group-hover:text-red/20 transition-colors duration-500 select-none">
                     {t.name.charAt(0)}
                   </span>
                 </div>
-                {/* Label overlay */}
+                {/* Champion badge */}
+                <div className="absolute top-3 left-3 inline-flex items-center gap-1.5 bg-red/90 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-sm">
+                  <Trophy className="h-3 w-3" />
+                  Champion
+                </div>
+                {/* Call label */}
                 <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
-                  <span className="inline-flex items-center gap-1.5 bg-red/90 text-white text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-sm">
-                    <Phone className="h-3 w-3" />
+                  <span className="inline-flex items-center gap-1.5 bg-ink-950/80 text-bone-100 text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-sm backdrop-blur-sm">
+                    <Phone className="h-3 w-3 text-red" />
                     Tap to Call
                   </span>
                 </div>
@@ -82,6 +85,10 @@ export default function Trainers() {
                   <span className="h-1 w-1 rounded-full bg-red" />
                   <span className="text-red font-medium">{t.role}</span>
                 </p>
+                <p className="mt-2 font-condensed text-bone-200 text-sm uppercase tracking-wide leading-snug">
+                  {t.title}
+                </p>
+                <p className="mt-2 text-bone-500 text-xs leading-relaxed">{t.creds}</p>
               </div>
             </a>
           ))}
