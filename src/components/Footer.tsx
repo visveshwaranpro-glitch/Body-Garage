@@ -80,13 +80,10 @@ export default function Footer() {
               <span className="flex h-10 w-10 items-center justify-center bg-red rounded-sm">
                 <span className="font-display text-white text-lg leading-none">BG</span>
               </span>
-              <span className="font-display text-bone-50 text-xl tracking-tightest uppercase">
-                Body <span className="text-red">Garage</span> Fitness Club
-              </span>
+              <h4 className="font-display text-bone-50 text-xl tracking-tightest uppercase">
+                Quick <span className="text-red">Links</span>
+              </h4>
             </div>
-            <h4 className="font-condensed text-bone-50 text-sm uppercase tracking-widest mb-5">
-              Quick Links
-            </h4>
             <ul className="grid grid-cols-2 gap-x-6 gap-y-3">
               {NAV.map((item) => (
                 <li key={item.id}>
