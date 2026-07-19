@@ -24,8 +24,8 @@ export default function Location() {
             <iframe
               title="Body Garage Fitness Club location"
               src={GYM.mapsEmbed}
-              className="w-full h-full min-h-[360px] grayscale contrast-125"
-              style={{ border: 0, filter: 'grayscale(1) invert(0.92) contrast(0.9)' }}
+              className="w-full h-full min-h-[360px]"
+              style={{ border: 0 }}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               allowFullScreen
