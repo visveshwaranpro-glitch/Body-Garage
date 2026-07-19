@@ -38,7 +38,7 @@ export default function About() {
             </p>
             <p className="reveal-right delay-1 mt-5 text-base text-bone-400 leading-relaxed">
               Whether your goal is to pack on serious muscle, shred stubborn fat, or step on stage
-              at a bodybuilding competition, our garage is engineered to forge results. Every age,
+              at a bodybuilding competition, our gym is engineered to forge results. Every age,
               every gender, every level — you belong here.
             </p>
           </div>
