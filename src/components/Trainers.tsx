@@ -53,11 +53,6 @@ export default function Trainers() {
                     {t.name.charAt(0)}
                   </span>
                 </div>
-                {/* Call label */}
-                <div className="absolute top-3 left-3 inline-flex items-center gap-1.5 bg-ink-950/80 text-bone-200 text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-sm">
-                  <Phone className="h-3 w-3 text-red" />
-                  Tap to Call
-                </div>
                 <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
                   <span className="inline-flex items-center gap-1.5 bg-ink-950/80 text-bone-100 text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-sm backdrop-blur-sm">
                     <Phone className="h-3 w-3 text-red" />
