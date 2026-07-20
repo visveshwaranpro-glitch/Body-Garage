@@ -8,7 +8,7 @@ export default function Pricing() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         {/* Background pricing text above the plans */}
         <div className="relative pointer-events-none select-none mb-2 flex justify-center">
-          <span className="font-display text-stroke text-[22vw] sm:text-[18vw] uppercase leading-[0.8] opacity-20">
+          <span className="font-display text-stroke font-black text-[22vw] sm:text-[18vw] uppercase leading-[0.8] opacity-35">
             PRICING
           </span>
         </div>
@@ -16,7 +16,7 @@ export default function Pricing() {
         <div className="text-center -mt-6 sm:-mt-10 relative">
           <div className="reveal flex items-center justify-center gap-3 mb-6">
             <span className="h-px w-10 bg-red" />
-            <span className="font-condensed text-red text-sm tracking-widest uppercase">
+            <span className="font-condensed text-bone-50 text-sm tracking-widest uppercase">
               Membership Plans
             </span>
             <span className="h-px w-10 bg-red" />
