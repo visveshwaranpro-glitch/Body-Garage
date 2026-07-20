@@ -104,13 +104,22 @@ export default function Timings() {
                   </div>
 
                   {/* Hours */}
-                  <div className="text-right min-w-0">
+                  <div className="text-right min-w-0 flex-shrink-0">
                     <span
-                      className={`block text-sm sm:text-base font-mono leading-snug ${
+                      className={`block text-[11px] sm:text-base font-mono leading-snug text-right ${
                         isToday ? 'text-bone-50 font-bold' : 'text-bone-300'
                       }`}
                     >
-                      <span className="sm:hidden">{row.hours}</span>
+                      <span className="sm:hidden flex flex-col items-end gap-1">
+                        {row.hours.includes(',') ? (
+                          <>
+                            <span>{row.hours.split(',')[0].trim()}</span>
+                            <span>{row.hours.split(',')[1].trim()}</span>
+                          </>
+                        ) : (
+                          <span>{row.hours}</span>
+                        )}
+                      </span>
                       <span className="hidden sm:inline">{row.hours}</span>
                     </span>
                   </div>
