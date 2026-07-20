@@ -7,20 +7,13 @@ const ICONS = { Maximize, Dumbbell, Users, HeartHandshake } as const;
 export default function About() {
   return (
     <section id="about" className="relative py-16 sm:py-24 bg-ink-900 overflow-hidden">
-      {/* Section label */}
-      <div className="absolute top-8 left-0 right-0 flex justify-center pointer-events-none">
-        <span className="font-display text-stroke font-black text-6xl sm:text-8xl uppercase opacity-40 select-none">
-          The Garage
-        </span>
-      </div>
-
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid lg:grid-cols-12 gap-12 items-start">
           {/* Left: heading */}
           <div className="lg:col-span-5">
             <div className="reveal-left flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-red" />
-              <span className="font-condensed text-bone-50 text-sm tracking-widest uppercase">About Us</span>
+              <span className="font-condensed text-red text-sm tracking-widest uppercase">About Us</span>
             </div>
             <h2 className="reveal-left delay-1 font-display text-bone-50 text-4xl sm:text-5xl lg:text-6xl uppercase leading-[0.95] tracking-tightest">
               Built For <span className="text-red">Champions</span>
