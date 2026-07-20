@@ -43,7 +43,6 @@ export default function Timings() {
           <h2 className="reveal delay-1 font-display text-bone-50 text-4xl sm:text-5xl lg:text-6xl uppercase leading-[0.95] tracking-tightest">
             Gym <span className="text-red">Timings</span>
           </h2>
-          <SectionBrand className="reveal delay-2 justify-center" />
           <p className="reveal delay-2 mt-5 text-bone-400 text-base sm:text-lg">
             Plan your training around our weekly schedule. Today's hours are highlighted.
           </p>

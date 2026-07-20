@@ -13,9 +13,8 @@ export default function Trainers() {
             <span className="font-condensed text-red text-sm tracking-widest uppercase">The Crew</span>
           </div>
           <h2 className="reveal delay-1 font-display text-bone-50 text-4xl sm:text-5xl lg:text-6xl uppercase leading-[0.95] tracking-tightest">
-            Meet Our Trainers
+            Meet Our <span className="text-red">Trainers</span>
           </h2>
-          <SectionBrand className="reveal delay-2" />
           <p className="reveal delay-2 mt-5 text-bone-400 text-lg">
             Train with Gold Medalist Bodybuilders and Weightlifters who provide expert coaching, personalized workout plans, and one-on-one personal training to help you achieve your fitness goals.
           </p>

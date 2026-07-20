@@ -48,8 +48,6 @@ export default function Hero() {
             Repeat.
           </h1>
 
-          <SectionBrand className="reveal delay-1" />
-
           {/* Subtext */}
           <p className="reveal delay-2 mt-8 max-w-xl text-base sm:text-lg text-bone-300 leading-relaxed">
             {GYM.tagline}

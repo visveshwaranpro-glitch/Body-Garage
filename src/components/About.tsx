@@ -25,7 +25,6 @@ export default function About() {
             <h2 className="reveal-left delay-1 font-display text-bone-50 text-4xl sm:text-5xl lg:text-6xl uppercase leading-[0.95] tracking-tightest">
               Built For <span className="text-red">Champions</span>
             </h2>
-            <SectionBrand className="reveal-left delay-2" />
           </div>
 
           {/* Right: story */}

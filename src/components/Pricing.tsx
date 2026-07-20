@@ -26,8 +26,6 @@ export default function Pricing() {
             Built Around <span className="text-red">Your Goals</span>
           </h2>
 
-          <SectionBrand className="reveal delay-2 justify-center" />
-
           <p className="reveal delay-3 mt-8 text-base sm:text-lg text-bone-300 leading-relaxed max-w-2xl mx-auto">
             Flexible membership options designed to match your commitment level. Contact us for
             pricing — we'll find the plan that fits your journey.

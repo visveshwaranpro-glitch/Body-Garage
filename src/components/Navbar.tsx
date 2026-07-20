@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
-import { GYM, NAV } from '../data';
+import { Menu, X } from 'lucide-react';
+import { NAV } from '../data';
 import { useScrolledPast, useActiveSection } from '../hooks';
 
 export default function Navbar() {
@@ -124,17 +124,6 @@ export default function Navbar() {
       >
         <div className="px-4 sm:px-6 pb-6 pt-2 bg-ink-950/95 backdrop-blur-xl border-t border-white/5">
           {/* Mobile header brand */}
-          <div className="flex items-center gap-3 py-3 mb-1">
-            <img
-              src="/images/logo.jpeg"
-              alt="Body Garage Fitness Club"
-              className="h-10 w-10 rounded-full border border-red/60 object-cover"
-              style={{ boxShadow: '0 0 10px 2px rgba(225,6,0,0.35)' }}
-            />
-            <span className="font-display text-base text-bone-50 uppercase tracking-tightest">
-              Body <span className="text-red">Garage</span>
-            </span>
-          </div>
           <ul className="flex flex-col">
             {NAV.map((item, i) => (
               <li key={item.id}>
@@ -150,13 +139,6 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <a
-            href={`tel:${GYM.phoneRaw}`}
-            className="mt-4 inline-flex items-center gap-2 bg-red text-white text-sm font-semibold uppercase tracking-wider px-5 py-3 rounded-sm w-full justify-center"
-          >
-            <Phone className="h-4 w-4" />
-            Call {GYM.phone}
-          </a>
         </div>
       </div>
     </header>

@@ -22,7 +22,6 @@ export default function Specializations() {
           <h2 className="reveal delay-1 font-display text-bone-50 text-4xl sm:text-5xl lg:text-6xl uppercase leading-[0.95] tracking-tightest">
             Our <span className="text-red">Specializations</span>
           </h2>
-          <SectionBrand className="reveal delay-2" />
           <p className="reveal delay-2 mt-5 text-bone-400 text-lg">
             Three pillars of training, each engineered to take you from where you are to where you
             want to be.
