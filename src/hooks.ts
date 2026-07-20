@@ -6,6 +6,13 @@ import { useEffect, useRef, useState } from 'react';
  */
 export function useScrollReveal() {
   useEffect(() => {
+    const els = Array.from(document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale'));
+
+    if (!('IntersectionObserver' in window)) {
+      els.forEach((el) => el.classList.add('is-visible'));
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -18,8 +25,10 @@ export function useScrollReveal() {
       { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
     );
 
-    const els = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
-    els.forEach((el) => observer.observe(el));
+    els.forEach((el) => {
+      el.classList.add('is-visible');
+      observer.observe(el);
+    });
 
     return () => observer.disconnect();
   }, []);

@@ -104,20 +104,15 @@ export default function Timings() {
                   </div>
 
                   {/* Hours */}
-                  <div className="text-right">
+                  <div className="text-right min-w-0">
                     <span
                       className={`block text-sm sm:text-base font-mono leading-snug ${
                         isToday ? 'text-bone-50 font-bold' : 'text-bone-300'
                       }`}
                     >
-                      <span className="sm:hidden">{row.hoursShort}</span>
+                      <span className="sm:hidden">{row.hours}</span>
                       <span className="hidden sm:inline">{row.hours}</span>
                     </span>
-                    {row.hours.includes(',') && (
-                      <span className="sm:hidden block text-[10px] text-bone-500 uppercase tracking-wider mt-0.5">
-                        + evening session
-                      </span>
-                    )}
                   </div>
                 </li>
               );
